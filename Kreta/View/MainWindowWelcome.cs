@@ -19,6 +19,10 @@ namespace Kreta
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
-    {        
+    {
+        private void miWelcome_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -20,5 +20,9 @@ namespace Kreta
     /// </summary>
     public partial class MainWindow : Window
     {
+        private void miStudent_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
