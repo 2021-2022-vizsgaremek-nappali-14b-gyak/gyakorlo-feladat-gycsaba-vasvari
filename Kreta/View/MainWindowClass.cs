@@ -20,14 +20,5 @@ namespace Kreta
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
-
-        private void miExit_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-        }
     }
 }
