@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Kreta.Stores
 {
-    class ApplicationStore
+    class SelectedClassStore
     {
     }
 }
