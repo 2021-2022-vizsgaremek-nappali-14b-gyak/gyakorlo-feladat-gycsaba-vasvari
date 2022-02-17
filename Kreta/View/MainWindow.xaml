@@ -13,7 +13,7 @@
                 <MenuItem x:Name="miClass" Header="_Osztály kiválasztása"></MenuItem>
                 <MenuItem x:Name="miStudent" Header="_Tanulók megjelenítése"></MenuItem>
                 <Separator />
-                <MenuItem x:Name="miExit"  Header="_Kilépés"></MenuItem>
+                <MenuItem x:Name="miExit"  Header="_Kilépés" Click="miExit_Click"></MenuItem>
             </MenuItem>
         </Menu>
     </Grid>

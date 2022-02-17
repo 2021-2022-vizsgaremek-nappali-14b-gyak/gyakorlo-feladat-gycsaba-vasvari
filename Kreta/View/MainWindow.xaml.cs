@@ -24,5 +24,10 @@ namespace Kreta
         {
             InitializeComponent();
         }
+
+        private void miExit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
