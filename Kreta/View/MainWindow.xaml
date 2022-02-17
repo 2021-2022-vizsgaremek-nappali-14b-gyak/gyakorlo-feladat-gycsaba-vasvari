@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Kreta"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Kréta" Height="800" Width="1024">
     <Grid>
-
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File">
+                <MenuItem x:Name="miWelcome" Header="_Köszöntő" Click="miWelcome_Click"></MenuItem>
+                <MenuItem x:Name="miClass" Header="_Osztály kiválasztása" Click="miClass_Click"></MenuItem>
+                <MenuItem x:Name="miStudent" Header="_Tanulók megjelenítése" Click="miStudent_Click"></MenuItem>
+                <Separator />
+                <MenuItem x:Name="miExit"  Header="_Kilépés" Click="miExit_Click"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <Grid x:Name="content" VerticalAlignment="Top" Width="1024" Height="750">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock>Üdvözlöm a Kréte nevezetű programban</TextBlock>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Window>
