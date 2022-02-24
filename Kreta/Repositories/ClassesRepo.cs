@@ -12,6 +12,8 @@ namespace Kreta.Repositories
     {
         private List<Class> classes;
 
+        public List<Class> Classes { get => classes; }
+
         public ClassesRepo()
         {
             classes = new List<Class>();
