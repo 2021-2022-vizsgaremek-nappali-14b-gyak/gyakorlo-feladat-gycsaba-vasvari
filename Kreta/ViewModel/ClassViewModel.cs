@@ -10,7 +10,7 @@ using System.Collections.ObjectModel;
 
 namespace Kreta.ViewModel
 {
-    class ClassViewModel
+    public class ClassViewModel
     {
         private ClassesRepo classesRepo;
         private ObservableCollection<Class> classes;
