@@ -13,6 +13,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using Kreta.View.Navigation;
+using Kreta.View.Page;
+
 namespace Kreta
 {
     /// <summary>
@@ -22,7 +25,8 @@ namespace Kreta
     {
         private void miClass_Click(object sender, RoutedEventArgs e)
         {
-
+            ClassPage classPage = new ClassPage();
+            Navigation.Navigate(classPage);
         }
     }
 }
