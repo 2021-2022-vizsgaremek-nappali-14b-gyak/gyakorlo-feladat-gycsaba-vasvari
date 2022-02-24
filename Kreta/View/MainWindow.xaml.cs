@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using Kreta.View.Navigation;
+
 namespace Kreta
 {
     /// <summary>
@@ -20,8 +22,10 @@ namespace Kreta
     /// </summary>
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
+            Navigation.MainWindow = this;
             InitializeComponent();
         }
 
