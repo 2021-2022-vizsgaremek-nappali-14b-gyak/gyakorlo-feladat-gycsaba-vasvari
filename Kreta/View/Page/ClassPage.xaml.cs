@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using Kreta.ViewModel;
+
 namespace Kreta.View.Page
 {
     /// <summary>
@@ -20,9 +22,12 @@ namespace Kreta.View.Page
     /// </summary>
     public partial class ClassPage : UserControl
     {
-        public ClassPage()
+        private ClassViewModel classViewModel;
+        public ClassPage(ClassViewModel classViewModel)
         {
+            this.classViewModel = classViewModel;
             InitializeComponent();
+            this.DataContext = classViewModel;
         }
     }
 }
