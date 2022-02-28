@@ -11,7 +11,7 @@
         <ListBox Margin="150 5 400 500"
                  x:Name="lbClass" 
                  ItemsSource="{Binding Classes}" 
-                 DisplayMemberPath="Id">
+                 DisplayMemberPath="GradeGradeType">
         </ListBox>
     </Grid>
 </UserControl>
