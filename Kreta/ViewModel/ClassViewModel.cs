@@ -18,6 +18,7 @@ namespace Kreta.ViewModel
         public ClassViewModel()
         {
             classesRepo = new ClassesRepo();
+            classes = new ObservableCollection<Class>(classesRepo.Classes);
         }
 
         public ObservableCollection<Class> Classes { get => classes; set => classes = value; }
