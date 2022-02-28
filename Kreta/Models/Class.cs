@@ -25,6 +25,14 @@ namespace Kreta.Models
         public int Grade { get => grade; set => grade = value; }
         public char GradeType { get => gradeType; set => gradeType = value; }
         public int TeacherId { get => teacherId; set => teacherId = value; }
+        public string GradeGradeType
+        {
+            get
+            {
+                string result = grade + ". " + gradeType;
+                return result;
+            }
+        }
 
         public override string ToString()
         {
