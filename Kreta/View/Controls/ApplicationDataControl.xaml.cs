@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Kreta.View.Control
+namespace Kreta.View.Controls
 {
     /// <summary>
     /// Interaction logic for ApplicationDataControl.xaml

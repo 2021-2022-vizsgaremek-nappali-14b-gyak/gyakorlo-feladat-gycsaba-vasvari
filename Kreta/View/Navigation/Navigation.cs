@@ -16,6 +16,6 @@ namespace Kreta.View.Navigation
         {
             MainWindow.Content.Children.Clear();
             MainWindow.Content.Children.Add(userControl);
-        }       
+        }
     }
 }

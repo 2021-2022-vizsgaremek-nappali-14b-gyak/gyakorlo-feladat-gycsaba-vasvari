@@ -12,9 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
 using Kreta.View.Navigation;
-using Kreta.View.Controls;
+using Kreta.View.Page;
+using Kreta.ViewModel;
 
 namespace Kreta
 {
@@ -23,10 +23,13 @@ namespace Kreta
     /// </summary>
     public partial class MainWindow : Window
     {
-        private void miWelcome_Click(object sender, RoutedEventArgs e)
+        private SubjectViewModel subjectViewModel = new SubjectViewModel();
+        private void miSubject_Click(object sender, RoutedEventArgs e)
         {
-            WelcomePage welcomePage = new WelcomePage();
-            Navigation.Navigate(welcomePage);
+            SubjectPage subjectPage = new SubjectPage(subjectViewModel);
+
+            Navigation.Navigate(subjectPage);
+
         }
     }
 }
